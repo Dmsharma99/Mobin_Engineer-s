@@ -474,41 +474,41 @@ window.addEventListener('error', function(e) {
 });
 
 // Accessibility Improvements
-function initializeAccessibility() {
-    // Skip to main content link
-    const skipLink = document.createElement('a');
-    skipLink.href = '#main';
-    skipLink.textContent = 'Skip to main content';
-    skipLink.className = 'skip-link';
-    skipLink.style.cssText = `
-        position: absolute;
-        top: -40px;
-        left: 6px;
-        background: var(--primary-color);
-        color: white;
-        padding: 8px;
-        text-decoration: none;
-        border-radius: 4px;
-        z-index: 9999;
-        transition: top 0.3s;
-    `;
+// function initializeAccessibility() {
+//     // Skip to main content link
+//     const skipLink = document.createElement('a');
+//     skipLink.href = '#main';
+//     skipLink.textContent = 'Skip to main content';
+//     skipLink.className = 'skip-link';
+//     skipLink.style.cssText = `
+//         position: absolute;
+//         top: -40px;
+//         left: 6px;
+//         background: var(--primary-color);
+//         color: white;
+//         padding: 8px;
+//         text-decoration: none;
+//         border-radius: 4px;
+//         z-index: 9999;
+//         transition: top 0.3s;
+//     `;
     
-    skipLink.addEventListener('focus', () => {
-        skipLink.style.top = '6px';
-    });
+//     skipLink.addEventListener('focus', () => {
+//         skipLink.style.top = '6px';
+//     });
     
-    skipLink.addEventListener('blur', () => {
-        skipLink.style.top = '-40px';
-    });
+//     skipLink.addEventListener('blur', () => {
+//         skipLink.style.top = '-40px';
+//     });
     
-    document.body.insertBefore(skipLink, document.body.firstChild);
+//     document.body.insertBefore(skipLink, document.body.firstChild);
     
-    // Add main landmark
-    const main = document.querySelector('main');
-    if (main) {
-        main.id = 'main';
-    }
-}
+//     // Add main landmark
+//     const main = document.querySelector('main');
+//     if (main) {
+//         main.id = 'main';
+//     }
+// }
 
 // Initialize accessibility features
 document.addEventListener('DOMContentLoaded', initializeAccessibility);
@@ -534,5 +534,6 @@ if ('serviceWorker' in navigator) {
         //     .catch(error => console.log('SW registration failed'));
     });
 }
+
 
 console.log('Mobin Engineers website scripts loaded successfully');
