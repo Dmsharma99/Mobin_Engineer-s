@@ -15,17 +15,23 @@ const products = [
         icon: 'fas fa-plug'
     },
     {
+        // id: 'ring',
+        // name: 'Ring Plunger',
+        // description: 'Precision-engineered rings and seals for injection molding machines, ensuring optimal sealing and performance under high pressure.',
+        // icon: 'fas fa-circle'
+
         id: 'ring',
-        name: 'Ring',
-        description: 'Precision-engineered rings and seals for injection molding machines, ensuring optimal sealing and performance under high pressure.',
+        name: 'Ring Plunger',
+        description: 'The ring plunger injects molten plastic into moulds while preventing backflow for precise shaping.',
         icon: 'fas fa-circle'
+        
     },
-    {
-        id: 'plunger',
-        name: 'Plunger',
-        description: 'Heavy-duty plungers manufactured to withstand high-pressure injection molding operations with consistent performance.',
-        icon: 'fas fa-piston'
-    },
+    // {
+    //     id: 'plunger',
+    //     name: 'Plunger',
+    //     description: 'Heavy-duty plungers manufactured to withstand high-pressure injection molding operations with consistent performance.',
+    //     icon: 'fas fa-piston'
+    // },
     {
         id: 'drive-shaft',
         name: 'Drive Shaft',
@@ -537,3 +543,4 @@ if ('serviceWorker' in navigator) {
 
 
 console.log('Mobin Engineers website scripts loaded successfully');
+
